@@ -10,3 +10,511 @@ int main()
 
     return 0;
 }
+                                         OBJECT ORIENTED PROGRAMMING (PCS)                    .
+
+
+Q1.   WAP  TO FIND THE AVERAGE OF TWO NUMBER.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Sidddharth ghildiyal "<<endl;
+    int n=0,k=0;
+    cout<<"enter the values for two integer"<<endl;
+    cin>>n>>k;
+    float h=(n+k)/2;
+    cout<<"the average of two no. are = "<<h;
+
+    return 0;
+}
+
+SIDDHARTH GHILDIYAL/20011836/ B.TECH/L
+ 
+ 
+Q2 WAP FOR CREATING THE DIFFERENT TYPES OF  ‘*’ PATTERNS.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int k,l;
+    cout<<"enter the no. of rows in pattern"<<endl;
+    cin>>k;
+    cout<<"enter the no. of cloumn in pattern"<<endl;
+    cin>>l;
+    for(int y=0;y<k;y++)
+    {
+      for(int m=0;m<l;m++)
+      {
+          cout<<"*";
+      }
+      cout<<endl;
+    }
+  return 0;
+}
+
+SIDDHARTH GHILDIYAL/20011836/B.TECH/L
+ 
+ 
+Q3 WAP TO MKE A CALCULATOR USING SWITCH CASE.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"SIDDHARTH GHILDIYAL/n SECTION L/n  20011836"<<endl;
+  int l=0;
+  cout<<"enter the 1 for add, 2 for subtract and 3 for multiplication"<<endl;
+  cin>>l;
+  switch(l)
+  {
+  case 1:
+    {
+        cout<<"enter the two no. for addition\n ";
+        int l,k;
+        cin>>l>>k;
+        cout<<"the addition of two no. are =" <<l+k;
+        break;
+    }
+  case 2:
+    {
+        cout<<"enter the two no. for subtraction \n"<<endl;
+        int h,j;
+        cin>>h>>j;
+        cout<<"the subtraction of two no. are\n"<<h-j;
+        break;
+    }
+  case 3:
+    {
+
+        int h,k;
+        cout<<"enter the two no. value for the multiplication\n"<<endl;
+        cin>>h>>k;
+        cout<<"the multiplication of two no. are "<<h*k<<endl;
+        break;
+    }
+  }
+  return 0;
+} 
+ 
+Q4 .WAP TO FIND THE FACTORIAL OF ANY GIVEN NUMBER.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int j,g=1;
+  cout<<"enter the any no. of which you want to find the factorial\n";
+  cin>>j;
+  for(;j>0;j--)
+  {
+      g=g*j;
+      cout<<j;
+      if(j>0)
+      {
+          cout<<"*";
+      }
+  }cout<<"="<<g;
+  return 0;
+}
+SIDDHARTH GHILDIYAL/20011836/B.TECH/L
+
+ 
+ 
+Q5  WAP TO CALCULATE AREA OF SQUARE ,AREA OF RECTANGLEAND AREA OF CIRCLE USING FUNCTION OVERLOADING.
+#include <iostream>
+
+using namespace std;
+void area(int l)
+{
+    int a;
+    a=l*l;
+    cout<<"the area of the square is"<<a<<endl;
+}
+void area(int l,int b)
+{
+    int a;
+    a=l*b;
+    cout<<"the area of the rectangle is"<<a<<endl;
+}
+void area(float r)
+{
+    float a;
+    a=3.15*r*r;
+    cout<<"the area of the circle \n"<<a<<endl;
+}
+
+int main()
+{
+    int l,b;
+    float r;
+    cout<<"entr the the length ,breadth and heigh\n";
+    cin>>l>>b>>r;
+    area(l);
+    area(l,b);
+    area(r);
+  return 0;
+}
+SIDDHARTH GHILDIYAL/20011836/B.TECH/L
+
+ 
+ 
+Q6 WAP TO FIND WHEHER A ENTER YEAR IS LEAP YEAR IS NOT.
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+int main(){
+int year;
+cout<<”Enter any Year”<<endl;
+cin>>year;
+if(year%400==0){
+cout<<”LEAP YEAR”<<endl;
+}
+else if(year%100==0){
+cout<<”NOT A LEAP YEAR”<<endl;
+}
+else if(year%4==0){
+cout<<”LEAP YEAR”<<endl;
+}	
+else
+cout<<”NOT A LEAP YEAR”<<endl;
+return 0;
+}
+
+
+SIDDHARTH GHILDIYAL/20011836/B.TECH/L
+
+ 
+ 
+•	WAP to swap the value of any two variables using call by reference.
+	
+	
+#include<iostream>
+using namespace std;
+void swap(int &, int &);
+int main(){
+	cout<<"Enter two numbers"<<endl;
+	int x,y;
+	cin>>x>>y;
+	cout<<"Numbers before swapping:"<<endl;
+	cout<<"A= "<<x<<endl
+cout<<"B= "<<y<<endl;
+	swap(x,y);
+	cout<<"Numbers after swapping:"<<endl;
+	cout<<"A= "<<x<<endl;
+	cout<<"B= "<<y<<endl;
+	return 0;
+}
+void swap(int &x, int &y){
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+}
+
+Siddharth ghildiyal/20011836/b.tech/L
+ 
+ 
+
+
+
+•	WAP to array rotation
+#include<iostream>
+using namespace std;
+int main(){
+  int n,p;
+cout<<"Enter number of elements you want in array\n";
+cin>>n;
+  int arr[n];
+cout<<"Enter elements of array"<<endl;
+  for(int i=0;i<n;i++){
+cin>>arr[i];
+  }
+cout<<"Enter number of position you want to rotate"<<endl;
+cin>>p;
+cout<<"Array before rotation"<<endl;
+  for(int i=0;i<n;i++){
+cout<<arr[i]<<"\t";
+  }
+cout<<endl;
+cout<<"Array after rotation"<<endl;
+  for(int i=0;i<n;i++){
+cout<<arr[(i+p)%n]<<"\t";
+  }
+  return 0;
+}
+Siddharth ghildiyal/20011836/b.tech/L
+ 
+
+
+
+•	WAP that will ask for a temperature in Fahrenheit and display it in Celsius.
+
+
+#include <iostream>
+using namespace std;
+int main(){
+	cout<<"Enter temperature in Fahrenheit:"<<endl;
+	float f;
+	cin>>f;
+	float c;
+	c=(f-32)*(5/9.0);
+	cout<<f<<" "<<"in Celsius is:"<<c<<endl;
+	return 0;
+}
+Siddharth Ghildiyal/20011836/B.tech/L
+ 
+•	WAP to remove the character from 1st string which are present in 2nd string.
+#include<iostream>
+using namespace std;
+char *RemoveChars(char *string1, char *string2)
+{
+int *count = (int *)calloc(sizeof(int), ASCII_SIZE);
+for(int i = 0; *(string2+i); i++)
+{
+count[*(string2+i)]++;
+}
+int i = 0, j = 0;
+while(*(string1 + i))
+{
+char temp = *(string1 + i);
+//If count of charcter is zero add to output
+if(count[temp] == 0)
+{
+*(string1 + j) = *(string1 + i);
+j++;
+}
+i++;
+} 	
+*(string1+j) = '\0'; 
+return string1;
+}
+int main()
+{
+char string1[] = "computer";
+char string2[] = "programming";
+cout<<"Input strings:\n";
+cout<<"string1: ";
+for (int i = 0; i<strlen(string1); ++i)
+{
+cout<<string1[i];
+}
+cout<<"\nstring2: ";
+for (int i = 0; i<strlen(string2); ++i)
+{
+cout<<string2[i];
+}
+cout<<"\nOutput: ";
+cout<<RemoveChars(string1, string2);
+return 0;
+}
+Siddharth  Ghildiyal/20011836/B.tech/L
+
+•	Write a C++ program to reverse the array elements, which are entered by the user.
+
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int n;
+	cout<<"Enter the size of array:";
+	cin>>n;
+	cout<<endl;
+	int a[50];
+	cout<<"Enter element of array"<<endl;
+	for(int i=1;i<=n;i++){
+		cin>>a[i];
+	}
+	cout<<"Elements of array before reversing"<<endl;
+	for(int i=1;i<=n;i++){
+		cout<<a[i]<<"\t";
+
+	}
+	cout<<endl;
+	cout<<"Elements of array after reversing"<<endl;
+	for(int i=n;i>0;i--){
+		cout<<a[i]<<"\t";
+	}
+
+	cout<<endl;
+	return 0;
+}
+ 
+
+•	Write a C++ program to count the duplicate elements in the array.
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"Enter how many elements you want in your array"<<endl;
+	int arr[50];
+	cin>>n;
+	cout<<"Enter elements in array"<<endl;
+	for(int i=0;i<n;i++){
+            	cin>>arr[i];
+	}
+	int count=0;
+	for(int i=0;i<n;i++){
+		for(int j=i+1;j<n;j++){
+			if(arr[i]==arr[j]){
+				count++;
+				break;
+			}
+		}
+	}
+	cout<<"Number of duplicate elements present in array is:"<<count+1<<endl;
+	return 0;
+}
+ 
+•	Write a C++ program to multiply two 4X4 matrices and print the matrix in the tabular form.
+i.e. 	1	2	3	4
+	5	6	7	8
+	8	9	10	11
+	12	13	14	15
+
+
+#include<iostream>
+using namespace std;
+int main(){
+  int arr1[4][4],arr2[4][4],mul[4][4];
+
+cout<<"Enter elements of 1st array:"<<endl;
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+cin>>arr1[i][j];
+    }
+  }
+cout<<"Enter elements of 2nd array:"<<endl;
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+cin>>arr2[i][j];
+    }
+  }
+cout<<"Elements of 1st array"<<endl;
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+cout<<arr1[i][j]<<" ";
+    }
+cout<<endl;
+  }
+cout<<"Elements of 2nd array"<<endl;
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+cout<<arr2[i][j]<<" ";
+    }
+cout<<endl;
+  }
+cout<<"Multiplication of arrays are:"<<endl;
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+mul[i][j]=0;
+      for(int k=0;k<4;k++){
+mul[i][j]+=arr1[i][k]*arr2[k][j];
+      }
+    }
+  }
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+cout<<mul[i][j]<<" ";
+    }
+      for(int k=0;k<4;k++){
+mul[i][j]+=arr1[i][k]*arr2[k][j];
+      }
+    }
+  }
+  for(int i=0;i<4;i++){
+    for(int j=0;j<4;j++){
+cout<<mul[i][j]<<" ";
+    }
+cout<<endl;
+  }
+
+  return 0;
+}
+
+Siddharth Ghildiyal/20011836/B.tech/L
+
+ 
+ 
+•	Write a C++ program to print the array element’s address with the help of pointers.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float arr[50];
+    int n;
+    float *ptr;
+cout<<"Enter number of element you want in your array"<<endl;
+cin>>n;
+
+    for (int i = 0; i < n;i++)
+    {
+cout<< "ptr + " << i << " = "<<ptr + i<< endl;
+    }
+    return 0;
+}
+
+Siddharth Ghildiyal/2001836/B.tech/L
+
+ 
+ 
+
+
+
+•	An electricity board charges the following rates to domestic users to discourage large consumption of energy:
+For the first 100 units-60P per unit
+For the next 200 units-80P per unit 
+For beyond 300 unit- 90P unit
+	All users are charged a minimum of rupee 50.00 If the total amount is more than 
+	Rs. 300 then an additional surcharge of 15% is added. WAP to read the names of 
+	Users and no. of units consumed and print out the charges with names.
+
+	#include<iostream>
+using namespace std;
+int main(){
+		int unit,rate=0;
+		cout<<"Enter number of units"<<endl;
+		cin>>unit;
+		int charge=0;
+		if(unit<=100){
+			charge=unit*0.60;
+		}	
+		else if(unit>100&&unit<=300){
+			 charge=100*0.60;
+			charge+=(unit-100)*0.80;
+		}	
+		else if(unit>300){
+			charge=100*0.60;
+			charge+=200*0.80;
+			charge+=(unit-300)*0.90;
+		}
+		 if(charge<50){
+			charge=50;
+		}
+	 else if(charge>300){
+			rate=(0.15*charge);
+			charge+=rate;
+		}
+		cout<<"Units::"<<unit<<" "<<"Charge::"<<charge<<endl;
+		 return 0;
+}	
+	SiddharthGhildiyal/20011836/B.tech/L
+ 
+
+
+
+
+
+
+	
