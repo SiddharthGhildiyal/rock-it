@@ -1,0 +1,12 @@
+using namespace std;
+
+int main()
+{
+    int n=0,k=0;
+    cout<<"enter the values for two integer"<<endl;
+    cin>>n>>k;
+    float h=(n+k)/2;
+    cout<<"the average of two no. are = "<<h;
+
+    return 0;
+}
